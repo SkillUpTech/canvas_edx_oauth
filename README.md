@@ -10,15 +10,15 @@ Add oauth2 provider config
 
 https://<lmsurl>/admin/third_party_auth/oauth2providerconfig/
 
-Check Enabled
-Set icon image (download favicon.ico image from this repository)
-Name: Canvas
-Enable Visible
-Enable Drop existing session
-Backend name: canvas-oauth2
-Provider slug: canvas-oauth2
-Client ID: canvas_id
-Client Secret: canvas_secret
+- Check Enabled
+- Set icon image (download favicon.ico image from this repository)
+- Name: Canvas
+- Enable Visible
+- Enable Drop existing session
+- Backend name: canvas-oauth2
+- Provider slug: canvas-oauth2
+- Client ID: canvas_id
+- Client Secret: canvas_secret
 Other Settings:
 {
     "PROFILE_EXTRA_PARAMS": {
