@@ -3,6 +3,14 @@ Authenticate canvas instance with open edx
 
 Download canvas.py from this repository and copy into /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/social_core/backends/
 
+Edit /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/social_core/backends/canvas.py
+
+Replace AUTHORIZATION_URL, ACCESS_TOKEN_URL with Canvas instance URL
+
+AUTHORIZATION_URL = 'https://bcconted.instructure.com/login/oauth2/auth'
+ACCESS_TOKEN_URL = 'https://bcconted.instructure.com/login/oauth2/token'
+
+
 Restart LMS
 /edx/bin/supervisorctl restart edxapp:lms
 
