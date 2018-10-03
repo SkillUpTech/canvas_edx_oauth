@@ -11,7 +11,7 @@ AUTHORIZATION_URL = 'https://bcconted.instructure.com/login/oauth2/auth'
 ACCESS_TOKEN_URL = 'https://bcconted.instructure.com/login/oauth2/token'
 
 Edit lms.env.json file and add 
-
+```
  "THIRD_PARTY_AUTH_BACKENDS": [
          "social_core.backends.google.GoogleOAuth2",
          "social_core.backends.linkedin.LinkedinOAuth2",
@@ -19,7 +19,7 @@ Edit lms.env.json file and add
          "social_core.backends.facebook.FacebookOAuth2",
          "social_core.backends.azuread.AzureADOAuth2"
     ],
-
+```
 Restart LMS
 /edx/bin/supervisorctl restart edxapp:lms
 
